@@ -1,0 +1,42 @@
+{
+  "Conectando…": {
+    "en": "Connecting…",
+    "vi": "Đang kết nối…"
+  },
+  "Não conectou": {
+    "en": "Couldn't connect",
+    "vi": "Không kết nối được"
+  },
+  "Abrir no navegador": {
+    "en": "Open in browser",
+    "vi": "Mở trên trình duyệt"
+  },
+  "Copiar link": {
+    "en": "Copy link",
+    "vi": "Sao chép link"
+  },
+  "Conectado": {
+    "en": "Connected",
+    "vi": "Đã kết nối"
+  },
+  "Remote Control: conectado": {
+    "en": "Remote Control: connected",
+    "vi": "Remote Control: đã kết nối"
+  },
+  "Esta conversa está no claude.ai/code e no app do Claude, com o histórico. O que você mandar por lá aparece aqui também.": {
+    "en": "This conversation is on claude.ai/code and in the Claude app, history included. What you send from there shows up here too.",
+    "vi": "Cuộc trò chuyện này đang có trên claude.ai/code và app Claude, kèm lịch sử. Tin nhắn bạn gửi từ đó cũng hiện ở đây."
+  },
+  "Continue esta conversa pelo claude.ai/code ou pelo app do Claude no celular. O Claude roda neste computador: deixe o Claudie aberto.": {
+    "en": "Carry on with this conversation from claude.ai/code or the Claude app on your phone. Claude runs on this computer: keep Claudie open.",
+    "vi": "Làm tiếp cuộc trò chuyện này từ claude.ai/code hoặc app Claude trên điện thoại. Claude chạy trên máy tính này: hãy để Claudie mở."
+  },
+  "Mande uma mensagem primeiro: o Remote Control leva esta conversa, e ela ainda não começou.": {
+    "en": "Send a message first: Remote Control carries this conversation, and it hasn't started yet.",
+    "vi": "Hãy gửi một tin nhắn trước: Remote Control mang cuộc trò chuyện này đi, mà nó chưa bắt đầu."
+  },
+  "O Remote Control caiu.": {
+    "en": "Remote Control dropped.",
+    "vi": "Remote Control bị ngắt."
+  }
+}

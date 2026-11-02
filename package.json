@@ -1,0 +1,111 @@
+{
+  "name": "claudie",
+  "productName": "Claudie",
+  "version": "1.2.2",
+  "private": true,
+  "description": "Claudie: Claude Code with live ASCII wallpapers, in Portuguese, English and Vietnamese (based on Claudinho)",
+  "type": "module",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win nsis",
+    "dist:mac": "electron-builder --mac dmg --publish never"
+  },
+  "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "^0.3.312",
+    "ascii-magic-art": "^1.1.0",
+    "electron-updater": "^6.8.11",
+    "koffi": "^3.3.6",
+    "marked": "^18.1.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "electron": "^45.1.0",
+    "electron-builder": "^26.18.0"
+  },
+  "author": {
+    "name": "Nguyễn Văn Nam",
+    "url": "https://github.com/siinn1706"
+  },
+  "homepage": "https://github.com/siinn1706/claudie",
+  "build": {
+    "appId": "com.claudie.app",
+    "productName": "Claudie",
+    "copyright": "Copyright © 2026 Nguyễn Văn Nam. Based on Claudinho by Luis Roberto (MIT).",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "src/**/*",
+      "package.json",
+      "!node_modules/@anthropic-ai/claude-agent-sdk-*/**",
+      "!**/*.map"
+    ],
+    "protocols": [
+      {
+        "name": "Claudie",
+        "schemes": [
+          "claudie"
+        ]
+      }
+    ],
+    "asar": true,
+    "asarUnpack": [
+      "node_modules/koffi/**",
+      "node_modules/@koromix/koffi-*/**"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "src/icone.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Claudie",
+      "artifactName": "Claudie-Setup.exe",
+      "installerIcon": "src/icone.ico",
+      "uninstallerIcon": "src/icone.ico",
+      "uninstallDisplayName": "Claudie"
+    },
+    "mac": {
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "arm64",
+            "x64"
+          ]
+        }
+      ],
+      "category": "public.app-category.developer-tools",
+      "icon": "src/icone-512.png"
+    },
+    "dmg": {
+      "artifactName": "Claudie-${version}-${arch}.dmg"
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "siinn1706",
+        "repo": "claudie",
+        "releaseType": "release"
+      }
+    ]
+  },
+  "contributors": [
+    {
+      "name": "Luis Roberto",
+      "url": "https://luisrobertoportifolio.com"
+    }
+  ]
+}
